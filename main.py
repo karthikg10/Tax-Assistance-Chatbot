@@ -24,8 +24,7 @@ llm = ChatGoogleGenerativeAI(api_key= 'Your_API_KEY', model = "gemini-1.5-flash"
 memory = ConversationBufferMemory(memory_key='chat_history', return_messages=True)
 
 st.set_page_config(page_title="Tax Assistant", page_icon="💰")
-# st.title("Tax Assistant Chatbot: helps you with tax related concerns")
-# Header
+
 st.markdown("""
     <style>
         .main-header {
@@ -44,19 +43,6 @@ st.markdown("""
     <h1 class="main-header">Tax Assistant Chatbot</h1>
     <p class="sub-header">Your AI-powered assistant for tax-related queries.</p>
 """, unsafe_allow_html=True)
-
-# # Chat Container
-# st.markdown("""
-#     <style>
-#         .chat-container {
-#             background-color: #fafafa;
-#             padding: 20px;
-#             border-radius: 10px;
-#             box-shadow: 0 0 10px rgba(0,0,0,0.1);
-#         }
-#     </style>
-#     <div class="chat-container">
-# """, unsafe_allow_html=True)
 
 st.markdown("""
     <style>
