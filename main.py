@@ -19,7 +19,7 @@ def database_setup():
     vectorstore = Chroma(persist_directory=persist_directory,embedding_function=embeddings)
     return vectorstore
 
-llm = ChatGoogleGenerativeAI(api_key= 'AIzaSyB6JIb2GyfgAPS4NMd0uZdBsO3DKCUSNnY', model = "gemini-1.5-flash", temperature=0)
+llm = ChatGoogleGenerativeAI(api_key= 'Your_API_KEY', model = "gemini-1.5-flash", temperature=0)
 
 memory = ConversationBufferMemory(memory_key='chat_history', return_messages=True)
 
